@@ -13,11 +13,24 @@
             margin: 10px;
         }
         .image2{
-            position: absolute;
+            /* position: absolute;/* Gap is not maintained of old image */
             top: 100px;
         }
         .container {
-            position: relative;
+            position: relative;/*Gap of image is maintained*/
+            height: 800px;
+            background-color: beige;
+        }
+        .image4{
+            position:fixed;/*entire webpage*/
+        }
+        .image3{
+            position:sticky;/*only in the parent container*/
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
         }
     </style>
 <body>
@@ -50,6 +63,9 @@
             height="300px"
             class="image4"
         />    
+    </div>
+    <div class="box">
+
     </div>
 </body>
 </html>
