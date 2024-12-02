@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shadow Effects</title>
 </head>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color: brown;
+            --custom-width: 330px;
+            background-color: aquamarine;
+            width: 330px;
+            height: 400px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+                           /* x-offset y-offset blur-radius color; */
+            /* box-shadow: 10px 15px var(--primary-color); */
+            /* box-shadow: 10px 15px 50px brown; */
+            /* box-shadow: 10px 15px 5px 20px blue; */
+            /* box-shadow: inset 10px 15px; */
+            /* box-shadow: 10px 15px red,15px 8px green; */
+
+        }
+        #head1{
+            /* text-shadow: 13px 3px 1px rgb(6, 177, 239); */
+            /* text-shadow: yellow 12px 13px  2px;*/
+            /* text-shadow: white 12px 13px; */
+            text-shadow: 12px 13px ;
+
+        }
+    </style>
 <body>
-    
+    <div class="container">
+        <div class="box">
+        <img src="Logo.png" >
+        <h2 id="head1">Welcome to CodeHelp</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt soluta atque perferendis sit officiis, quae deleniti? Earum, ducimus eos illum necessitatibus debitis tempora dicta!</p>
+    </div>
+    </div>
 </body>
 </html>
