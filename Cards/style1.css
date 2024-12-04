@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 900px; */
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 650px;
+    background-color:white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 1px 1px 10px 20px rgba(0,0,0,0.2);
+}
+.card img{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}   
+.TextBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width:70% ;
+
+}
+#amountBox{
+    width: 80%;
+    height: 10%;
+    background-color: rgb(146, 132, 248);
+    border-radius: 20px;
+    box-shadow: 1px 1px  20px rgba(43, 88, 238, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px ;
+    padding-left: 20px;
+}
+.leftBox{
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.rightBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.imageBox img{
+    height: 3rem;
+    width:3rem;
+}
+#paymentButton{
+    width: 80%;
+    height: 10%;
+    color: white;
+    background-color: rgb(15, 6, 80);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(43, 88, 238, 0.2),0 6px 6px rgba(43, 88, 238, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.cancelBox a{
+    text-decoration: none;
+    color: #534e4e;
+    font-weight: bold;
+    font-size: large;
+}
