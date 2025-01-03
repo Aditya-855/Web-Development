@@ -46,7 +46,7 @@ a{
     .main_container{
         grid-template-columns: repeat(3, 1fr);
     }
-}@media (min-width:1340px){
+}@media (min-width:1870px){
     .main_container{
         grid-template-columns: repeat(4, 1fr);
     }
